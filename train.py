@@ -3,7 +3,7 @@ import torchvision.datasets
 from torch.utils.data import DataLoader
 
 from model import *
-
+# 详细注释见train_gpu里
 train_data = torchvision.datasets.CIFAR10(root='./dataset2', train=True, transform=torchvision.transforms.ToTensor(), download = False)
 test_data = torchvision.datasets.CIFAR10(root='./dataset2', train=False, transform=torchvision.transforms.ToTensor(), download = False)
 
